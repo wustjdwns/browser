@@ -1,5 +1,5 @@
 const toDoForm = document.querySelector("#todo-form");
-const toDoInput = document.querySelector("#todo-form input")
+const toDoInput = document.querySelector("#todo-form input");
 const toDoList = document.querySelector("#todo-list");
 const TODOS_KEY = "todos";
 
@@ -22,7 +22,7 @@ function paintToDo(newTodo){
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "X"
+    button.innerText = "X";
     button.addEventListener("click", deleteToDo);
 
     li.appendChild(span);
